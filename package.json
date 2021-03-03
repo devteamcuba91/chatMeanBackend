@@ -1,0 +1,24 @@
+{
+  "name": "chatmeanbackend",
+  "version": "1.0.0",
+  "description": "backend for MEAN stack chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devteamcuba91/chatMeanBackend.git"
+  },
+  "author": "devteamcuba91",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devteamcuba91/chatMeanBackend/issues"
+  },
+  "homepage": "https://github.com/devteamcuba91/chatMeanBackend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18",
+    "nodemon": "^2.0.7"
+  }
+}

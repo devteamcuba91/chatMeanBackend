@@ -8,5 +8,5 @@ mongoose.connect(
         useCreateIndex: true
     }
 ).then(()=>{
-    console.log(`connected to mongodb on: ${process.env.LOCAL_DB}...`)
-})
+    console.log(`connected to mongodb on: ${process.env.LOCAL_DB}...`);
+});

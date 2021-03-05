@@ -8,16 +8,17 @@ dotenv.config({path: './config.env'});
 
 const PORT  = process.env.PORT || 3000;
 
-app.use(express.json())
+app.use(express.json());
 app.use(express.static(
     path.join(__dirname,'statics')
-))
+));
 
-require('./db')
+require('./db');
 routes(app);
 
 
 app.listen(
-    PORT,
-    ()=>{console.log(`server listen on port ${PORT}`)}
-)
+    PORT, ()=>{
+        console.log(`server listen on port ${PORT}`);
+    }
+);

@@ -1,4 +1,4 @@
-const { User} = require('./schema');
+const { User} = require('./model');
 
 
 module.exports.getMeHandler = (req, res)=>{

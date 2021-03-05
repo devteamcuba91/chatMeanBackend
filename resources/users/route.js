@@ -1,15 +1,38 @@
 const express = require('express');
-const { getMeHandler, getUsersHandler } = require('./handler');
+const { getMe, updatePassword, updateProfile, deleteProfile, getContacts, updateContacts, postContact, getUsers, getUserById, updateUserById, deleteUserById } = require('./controller');
 
 const router = express.Router();
 
 router
-.route('/')
-.get(getUsersHandler);
-
+.route('/me')
+.get(getMe);
 
 router
-.route('/Me')
-.get(getMeHandler);
+.route('/me/password')
+.patch(updatePassword);
+
+router
+.route('/me/profile')
+.patch(updateProfile)
+.delete(deleteProfile);
+
+router
+.route('/me/contacts')
+.get(getContacts)
+.patch(updateContacts)
+.post(postContact);
+
+router
+.route('/')
+.get(getUsers)
+
+router
+.route('/:id')
+.get(getUserById)
+.patch(updateUserById)
+.delete(deleteUserById);
+
+
+
 
 module.exports= router;
